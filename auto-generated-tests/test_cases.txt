@@ -1,0 +1,51 @@
+# Generated Test Cases for User Login with Valid Credentials
+
+- Test: test_login_with_valid_credentials
+  Description: Verify that a registered user can log in using valid credentials and is redirected to the dashboard.
+  Steps:
+    1. Navigate to the login page
+    2. Enter a valid username
+    3. Enter a valid password
+    4. Click the Login button
+  Expected Result: User is redirected to the dashboard
+
+- Test: test_login_with_invalid_username
+  Description: Verify that login fails when an invalid username is provided
+  Steps:
+    1. Navigate to the login page
+    2. Enter an invalid username
+    3. Enter a valid password
+    4. Click the Login button
+  Expected Result: Error message is displayed indicating invalid credentials
+
+- Test: test_login_with_invalid_password
+  Description: Verify that login fails when an invalid password is provided
+  Steps:
+    1. Navigate to the login page
+    2. Enter a valid username
+    3. Enter an invalid password
+    4. Click the Login button
+  Expected Result: Error message is displayed indicating invalid credentials
+
+- Test: test_login_with_empty_fields
+  Description: Verify that the login button is disabled when username or password fields are empty
+  Steps:
+    1. Navigate to the login page
+    2. Leave username and/or password fields empty
+  Expected Result: Login button is disabled
+
+- Test: test_login_button_enabled_on_input
+  Description: Verify that the login button is enabled after both username and password are entered
+  Steps:
+    1. Navigate to the login page
+    2. Enter a username
+    3. Enter a password
+  Expected Result: Login button is enabled
+
+- Test: test_error_message_on_invalid_credentials
+  Description: Verify that an error message appears for invalid credentials
+  Steps:
+    1. Navigate to the login page
+    2. Enter invalid username and/or password
+    3. Click the Login button
+  Expected Result: Error message is displayed
