@@ -1,0 +1,31 @@
+# Generated Test Cases for /src/module_x.py
+- Test: test_add_positive_numbers
+  Input: 2, 3
+  Expected Output: 5
+- Test: test_add_negative_numbers
+  Input: -2, -3
+  Expected Output: -5
+- Test: test_add_zero
+  Input: 0, 0
+  Expected Output: 0
+- Test: test_add_large_numbers
+  Input: 100000, 200000
+  Expected Output: 300000
+- Test: test_add_float_numbers
+  Input: 2.5, 3.5
+  Expected Output: 6.0
+- Test: test_add_string_input
+  Input: 'a', 'b'
+  Expected Output: Error
+- Test: test_add_none_input
+  Input: None, 1
+  Expected Output: Error
+- Test: test_add_list_input
+  Input: [1], [2]
+  Expected Output: Error
+- Test: test_add_mixed_types
+  Input: 2, '3'
+  Expected Output: Error
+- Test: test_add_negative_and_positive
+  Input: -2, 3
+  Expected Output: 1
